@@ -1,5 +1,13 @@
 # @tanstack/db
 
+## 0.0.6
+
+### Patch Changes
+
+- live query where clauses can now be a callback function that receives each row as a context object allowing full javascript access to the row data for filtering ([#152](https://github.com/TanStack/db/pull/152))
+
+- the live query select clause can now be a callback function that receives each row as a context object returning a new object with the selected fields. This also allows the for the callback to make more expressive changes to the returned data. ([#154](https://github.com/TanStack/db/pull/154))
+
 ## 0.0.5
 
 ### Patch Changes
